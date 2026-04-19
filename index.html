@@ -27,13 +27,16 @@ nav {
 
         nav a {
             color: white;
-            margin-left: 20px;
             text-decoration: none;
             font-weight: bold;
         }
 		nav h1 {
     margin: 0;
     font-size: 1.5em;
+}
+		.menu {
+    display: flex;
+    gap: 20px; /* mezera mezi odkazy */
 }
 
         nav a:hover {
@@ -76,10 +79,13 @@ nav {
 </head>
 <body>
 	<nav>
-		 <h1>IT služby od roku 1999</h1>
+    <h1>IT služby od roku 1999</h1>
+
+    <div class="menu">
         <a href="index.html">Domů</a>
         <a href="kontakt.html">Kontakt</a>
-    </nav>
+    </div>
+</nav>
 
     
     <div class="overlay">
