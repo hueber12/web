@@ -14,12 +14,15 @@
         }
 
         /* menu */
-        nav {
-    position: relative;   /* důležité */
-    z-index: 2;           /* vyšší než overlay */
+nav {
+    position: relative;
+    z-index: 2;
     background: rgba(0,0,0,0.8);
     padding: 15px;
-    text-align: right;
+
+    display: flex;
+    justify-content: space-between; /* rozdělení na levý a pravý okraj */
+    align-items: center;
 }
 
         nav a {
@@ -28,6 +31,10 @@
             text-decoration: none;
             font-weight: bold;
         }
+		nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
 
         nav a:hover {
             text-decoration: underline;
